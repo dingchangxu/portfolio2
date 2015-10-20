@@ -1,0 +1,299 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 60em) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+    html {
+    font-size: 130%;
+  }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+}
+
+.parallax-group {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.back {
+    /*background: url("../image/bg.jpg")*/
+    no-repeat center /cover;
+    padding-top: 65.67%;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+    position: relative;
+    top: calc(((100vh - 65.67vw) / 4) * -2);
+}
+
+.masthead {
+    /*position: fixed;*/
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    background-color: black;
+    width: 100%;
+    opacity: 0.7;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+}
+
+/*.bbox {
+    position: relative;
+}
+
+.blackbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.blackbox {
+    opacity: 1;
+    transition: all 1s linear;
+}*/
+
+.front {
+    background-color: #ebd10a;
+    color: #fff;
+}
+
+
+
+.myself {
+    position: absolute;
+    left: 0;
+    font-size: .75rem;
+    top: 5%;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    font-weight: 700;
+    text-align: center;
+    width: 100%; 
+    color: white;
+    line-height: 1.25rem;
+}
+
+.i1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    font-weight: 400;
+
+}
+.i2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 2px #aaa;
+    font-weight: 300;
+}
+
+.boxes {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.btn-show1:hover,
+.btn-show2:hover,
+.btn-show3:hover,
+.btn-show4:hover {
+    color: white;
+}
+
+.p4 {
+    margin: 0;
+}
+
+.logo {
+    width: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+#photos {
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    width: auto;
+    padding: 11.5rem;
+    text-align: center;
+    position: relative;
+    color: white;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.photo {
+    width: 100%;
+    
+}
+
+.footer {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-weight: 300;
+    background-color: black;
+    
+}
+
+.icon {
+    text-decoration: none;
+    width: 2em;
+	display: inline;
+}
+
+.btt { 
+	color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-size: .75rem;
+	font-weight: 400;
+    list-style: none;
+}
+
+.skip-links {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.skip-links a {
+	padding: 0.5em 0.75em;
+	position: absolute;
+	top: -3em;
+    background-color: #000;
+    color: #fff;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.skip-links a:focus {
+	top: 0;
+}
+
+@media only screen and (min-width: 10em) {
+.logo {
+    margin-top: -1rem; 
+}
+
+.myself {
+    top: 2.8%;
+    font-size: 1rem;
+    color: white;
+}  
+
+@media only screen and (min-width: 20em) {
+
+.myself {
+    top: 6.75rem;
+}   
+    
+.myself {
+    top: 2.8%;
+    font-size: 1.5rem;
+    color: red;
+    line-height: 2rem;
+}   
+}
+
+@media only screen and (min-width: 25em) {
+
+.myself {
+    top: 8.75rem;
+    font-size: 1.5rem;
+}     
+.middle {
+    top: 2.5%;
+    font-size: 3rem;
+    color: pink;
+}         
+}
+
+@media only screen and (min-width: 38em) {
+      
+.logo {
+    margin-top: -1rem;  
+}   
+    
+.middle {
+    top: 5.5%;
+    font-size: 4.5rem;
+    color: white;
+} 
+.myself {
+    top: 12rem;
+    font-size: 1.5rem;
+}  
+}
+
+@media only screen and (min-width: 45em) {
+
+.myself {
+    top: 15rem;
+    font-size: 1.5rem;
+} 
+    
+.middle {
+    top: 6%;
+    font-size: 6rem;
+    color: green;
+} 
+}
+    
+@media only screen and (min-width: 60em) {
+    
+
+}
+ 
+    
+@media only screen and (min-width: 80em) { 
+}   
